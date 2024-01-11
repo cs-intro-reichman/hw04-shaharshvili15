@@ -22,7 +22,7 @@ public class StringOps {
     //////                                               ///////
     ////////////////////////////////////////////////////////////
     public static void main(String[] args) {
-        //System.out.print(allIndexOf("MMSMM",'M'));
+        System.out.print(capVowelsLowRest("One two tHRee world"));
     }
 
     public static String capVowelsLowRest (String string) {
@@ -32,7 +32,7 @@ public class StringOps {
         for(int i=0 ; i<string.length(); i++){
             boolean isVowel= false;
             for (int j= 0 ; j<vowels.length;j++){
-                if(string.charAt(i) == vowels[j]){
+                if(string.charAt(i) == vowels[j] || string.charAt(i) == (char) (vowels[j]-32)){
                     isVowel = true;
                 }
             }
